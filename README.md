@@ -60,9 +60,57 @@ Future Improvements
 
 
 
-\* Perform a controlled concurrent-request test.
+\-Perform a controlled concurrent-request test.
 
-\* Configure Azure Monitor to collect VM and application metrics.
+\-Configure Azure Monitor to collect VM and application metrics.
 
-\* Repeat tests after infrastructure improvements and compare results using the same methodology.
+\-Repeat tests after infrastructure improvements and compare results using the same methodology.
+
+
+
+Performance Testing
+
+
+
+Overview
+
+
+
+A PowerShell script (`performance-test.ps1`) was created to test the response time and availability of the deployed Azure virtual machine web server.
+
+
+
+Test Results
+
+
+
+\-HTTP Status Code: 200 (OK)
+
+\-Average Response Time: Approximately 0.20 seconds across the initial three tests.
+
+\-Web Server: Nginx running on Ubuntu 24.04 LTS
+
+\-Testing Tool: PowerShell
+
+
+
+Key Findings
+
+
+
+The web server successfully returned HTTP 200 responses during testing, indicating that the website was reachable and responding to requests.
+
+
+
+Future Improvements
+
+
+
+\-Conduct larger-scale load testing.
+
+\-Configure Azure Monitor to track server performance.
+
+\-Explore Azure Application Gateway and Virtual Machine Scale Sets to improve availability and scalability.
+
+
 
